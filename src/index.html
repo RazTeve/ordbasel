@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <title>OrdBasel | The World's Premier Art Expo</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="fonts/JoystixMonospace-Regular.woff" as="Joystix
+    Monospace" type="font/woff" crossorigin>
+    <link href="styles/stylesheet.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <p>ORDBASEL.COM</p>
+
+      <ul class="navbarOptions">
+        <a href="#speakers"><p>SPEAKERS</p></a>
+        <a href="#agenda"><p>AGENDA</p></a>
+        <a href="#"
+          ><div class="buyTickets"><p>BUY_TICKETS</p></div></a
+        >
+      </ul>
+    </nav>
+    <div class="heroBanner">
+      <div class="heroBannerBackgroundImage"></div>
+      <div class="heroBannerBackgroundImageOverlay"></div>
+      <div class="headliner">
+        <p class="ordBaselHeadliner afterImage afterImage3">ORD|BASEL</p>
+        <p class="ordBaselHeadliner afterImage afterImage2">ORD|BASEL</p>
+        <p class="ordBaselHeadliner afterImage">ORD|BASEL</p>
+        <p class="ordBaselHeadliner">ORD|BASEL</p>
+      </div>
+      <p class="tagline">
+        Explore the intersection
+        <br />
+        of #Bitcoin and Art at
+        <br />
+        the world's premier art expo
+      </p>
+
+      <div class="date">
+        DEC 06 - DEC 10
+        <br />
+        MIAMI, FL
+      </div>
+    </div>
+    <div id="speakers" class="speakers">
+      <div class="sectionTitle">
+        <h1>
+          Main
+          <br />
+          Speakers
+        </h1>
+
+        <div id="speakerListings" class="speakerListings"></div>
+      </div>
+    </div>
+
+    <div class="artGallery"></div>
+
+    <div id="agenda" class="workshops">
+      <div class="workshopBackgroundImage"></div>
+      <div class="workshopBackgroundImageOverlay"></div>
+
+      <div class="sectionTitle workshopSectionTitle">
+        <h1>Event Workshops</h1>
+      </div>
+      <div class="workshopListings">
+        <div class="workshop">
+          <p class="workshopName">Ordinal Theory</p>
+          <p class="workshopDescription">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
+            dui id ornare arcu odio ut.
+          </p>
+
+          <p class="workshopDescription">
+            Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Et
+            malesuada fames ac turpis egestas. Elit sed vulputate mi sit amet
+            mauris commodo quis imperdiet. Tortor pretium viverra suspendisse
+            potenti nullam ac tortor vitae. dignissim.
+          </p>
+        </div>
+
+        <div class="workshop">
+          <p class="workshopName">Ordinal Theory</p>
+          <p class="workshopDescription">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
+            dui id ornare arcu odio ut.
+          </p>
+
+          <p class="workshopDescription">
+            Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Et
+            malesuada fames ac turpis egestas. Elit sed vulputate mi sit amet
+            mauris commodo quis imperdiet. Tortor pretium viverra suspendisse
+            potenti nullam ac tortor vitae. dignissim.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="actualFooter">
+      <div class="footerContact footerBorderTop footerBorderBottom">
+        <div class="footerDropUsALine footerBorderRight">
+          <h1>
+            Drop us
+            <br />
+            a line.
+          </h1>
+        </div>
+        <div class="footerGrid">
+          <div class="footerGridRow">
+            <div class="footerGridRowCell footerBorderBottom footerBorderRight">
+              <div class="footerGridRowCellInfo">
+                <h2>Location</h2>
+                <p>
+                  8325 NE 2nd Ave
+                  <br />
+                  Miami, FL
+                  <br />
+                  33138
+                </p>
+              </div>
+            </div>
+            <div class="footerGridRowCell footerBorderBottom">
+              <div class="footerGridRowCellInfo">
+                <h2>Contact</h2>
+                <a href="mailto:email@btcgrove.com"
+                  ><p>email@btcgrove.com</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footerGridRow">
+            <div class="footerGridRowCell footerBorderRight">
+              <div class="footerGridRowCellInfo">
+                <h2>Time</h2>
+                <p>TBA</p>
+              </div>
+            </div>
+            <div class="footerGridRowCell">
+              <div class="footerGridRowCellInfo">
+                <h2>Social Media</h2>
+                <p>
+                  <a href="https://twitter.com/OrdBasel" target="_blank"
+                    >Twitter</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerBrand">
+        <p class="ordBaselHeadliner textOutline">ORD|BASEL</p>
+      </div>
+    </div>
+
+    <script>
+      let speakerListings = document.getElementById("speakerListings");
+      let speakers = [
+        {
+          imageUrl: "./images/professorack.png",
+          name: "Professor Ack",
+        },
+        {
+          imageUrl: "./images/raphjaph.png",
+          name: "RaphJaph",
+        },
+        {
+          imageUrl: "./images/rocktoshi.png",
+          name: "Rocktoshi",
+        },
+      ];
+      for (let i = 0; i < speakers.length; i++) {
+        speakerListings.insertAdjacentHTML(
+          "beforeend",
+          ` <div>
+            <div class="speakerImage"
+            style="background-image:url(${speakers[i].imageUrl});"></div>
+            <p class="speakerTitle">SPEAKER</p>
+            <p class="speakerName">${speakers[i].name}</p>
+          </div>`
+        );
+      }
+    </script>
+  </body>
+</html>
