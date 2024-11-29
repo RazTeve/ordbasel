@@ -286,7 +286,9 @@ nav ul {
 }
 
 .workshop {
-  width: 35vw;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .workshopDescription {
@@ -308,6 +310,7 @@ nav ul {
   font-size: 30px;
   padding: 5px;
   width: fit-content;
+  margin-top: 0px;
 }
 
 .workshopSectionTitle {
